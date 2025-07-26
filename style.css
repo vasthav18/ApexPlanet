@@ -1,0 +1,19 @@
+h1 {
+    color: brown;
+    font-style: italic;
+    text-align: center;
+    margin-bottom: 20px;
+}
+p {
+    color: cornflowerblue;
+    font-style: oblique;
+    font-size: 25px;
+}
+body {
+    background-color:blanchedalmond
+}
+button {
+    font-size: larger;
+    background-color: chartreuse;
+    font-weight: 900;
+}
