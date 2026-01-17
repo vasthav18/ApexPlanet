@@ -1,19 +1,89 @@
-h1 {
-    color: brown;
-    font-style: italic;
-    text-align: center;
-    margin-bottom: 20px;
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: Arial, sans-serif;
 }
-p {
-    color: cornflowerblue;
-    font-style: oblique;
-    font-size: 25px;
-}
+
 body {
-    background-color:blanchedalmond
+  background-color: #f0f2f5;
+  color: #333;
+  line-height: 1.6;
 }
+
+header {
+  background: #007acc;
+  color: #fff;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav a {
+  color: white;
+  margin-left: 1rem;
+  text-decoration: none;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  padding: 2rem;
+}
+
+.card {
+  background: #fff;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+form input, form textarea, form button, #taskInput {
+  display: block;
+  width: 100%;
+  padding: 0.7rem;
+  margin: 0.5rem 0;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
 button {
-    font-size: larger;
-    background-color: chartreuse;
-    font-weight: 900;
+  background: #007acc;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #005f99;
+}
+
+ul {
+  list-style: none;
+  margin-top: 1rem;
+}
+
+li {
+  background: #e3f2fd;
+  margin: 0.5rem 0;
+  padding: 0.5rem;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+}
+
+li button {
+  background: red;
+  border: none;
+  color: white;
+  padding: 0.2rem 0.5rem;
+  border-radius: 3px;
+}
+
+@media (max-width: 768px) {
+  .grid-container {
+    grid-template-columns: 1fr;
+  }
 }
